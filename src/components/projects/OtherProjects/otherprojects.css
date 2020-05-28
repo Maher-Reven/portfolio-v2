@@ -1,0 +1,36 @@
+.other-projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  min-width: 250px;
+  width: 25rem;
+  background-color: var(--cardBackground);
+  margin: 2rem;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+.project-card ul li {
+  list-style: none;
+  box-shadow: var(--shadow);
+  margin: 1.2rem;
+  padding: 0.2rem;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.project-card h3 {
+  text-align: center;
+}
+.project-card h3 a {
+  color: #000;
+}
+
+.project-card p {
+  text-align: justify;
+  margin: 1.5rem;
+}

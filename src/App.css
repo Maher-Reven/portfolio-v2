@@ -1,0 +1,73 @@
+:root{
+  --mainColor:rgb(184, 195, 191);
+  --softWhite:  rgb(250, 250, 250);
+  --sectionColor:#ECF0F3;
+  --heColor:#adbab3;
+  --shadow: /* top left */
+  -8px -8px 15px #FFFFFF, /* offset */
+  0px 0px 0px 5px #ECF0F3, /* bottom right */
+  8px 8px 15px #A7AAAF, /*logo shadow  */
+  0px 0px 2px #5F5F5F;
+  --cardBackground:#ECF0F3 
+}
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  
+}
+
+
+
+body{
+  background-color: var(--sectionColor);
+  overflow-x: hidden;
+}
+
+
+
+/*--ANIMATIONS--*/
+@keyframes slideRight{
+  from{
+    margin-left:-100%
+  }
+  to{
+    margin-left:0
+  }
+}
+
+/* -- SECTION--*/
+
+section{
+  padding: 30px;
+  background-color: #ECF0F3 
+}
+
+section h2{
+  font-size: 35px;
+  text-transform: uppercase;
+  color: rgb(34, 34, 34);
+}
+
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+   opacity: 1;
+  }
+}
+  
+@keyframes createBorder{
+    from {
+      border:none;
+   
+    }
+    to{
+      border-radius: 0 0 30% 30%;
+    }
+  
+  }

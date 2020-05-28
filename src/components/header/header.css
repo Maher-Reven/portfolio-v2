@@ -1,0 +1,135 @@
+/*--HEADER--*/
+
+.intro-wrapper {
+  display: flex;
+  background-color: black;
+  overflow: hidden;
+}
+
+.summery-wrapper,
+.img-wrapper {
+  width: 50%;
+  height: 100vh;
+}
+
+.img-wrapper {
+  animation: fadeIn 2.5s forwards;
+  display: flex;
+  align-items: center;
+}
+
+.img-wrapper img {
+  width: 80%;
+  border-right: 9px solid rgb(38, 34, 253);
+  border-radius: 50%;
+  filter: contrast(1.3);
+}
+
+.summery-wrapper {
+  background-color: #fff;
+}
+
+.summery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(221, 221, 221);
+  width: 100%;
+  margin-left: -100%;
+  animation: slideRight 1s forwards;
+}
+.hello #he {
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.summery h1 {
+  line-height: 0.9;
+  font-size: 6vw;
+  animation: slideRight 1.5s forwards;
+}
+.summery h2 {
+  text-transform: uppercase;
+  padding: 15px;
+  width: 30vw;
+  border: 1px solid transparent;
+  background-color: rgb(35, 41, 88);
+  line-height: 0.9;
+  animation: slideRight 1.5s forwards;
+  border-radius: 0 5px 5px 0;
+  text-align: left;
+  margin-bottom: 1.2rem;
+}
+
+.summery p {
+  margin-top: 20px;
+  animation: slideRight 2s forwards;
+}
+
+.summery p , .summery h2{
+  font-size: 2vw;
+}
+
+.hello {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  margin-left: 10px;
+}
+
+.hello h3 {
+  font-size: 7vw;
+}
+
+.socials {
+  margin-left: 1rem;
+  z-index: 9999;
+  font-size: 1.5vw;
+}
+
+.socials i {
+  margin: 1.5rem;
+  animation: slideRight 1.5s forwards;
+  color: rgb(106, 104, 245);
+}
+
+.border {
+  animation: createBorder 1s forwards;
+}
+
+@media (max-width: 550px) {
+  .intro-wrapper {
+    flex-direction: column-reverse;
+  }
+  .img-wrapper,
+  .summery-wrapper {
+    height: auto;
+    width: 100%;
+  }
+
+  .img-wrapper {
+    justify-content: center;
+  }
+
+  .summery {
+    align-items: center;
+  }
+  .img-wrapper img {
+    width: 40%;
+    margin-top: 20px;
+  }
+  .socials i {
+    font-size: 20px;
+  }
+  .hello {
+    display: none;
+  }
+}

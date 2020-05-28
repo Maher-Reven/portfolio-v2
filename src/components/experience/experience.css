@@ -1,0 +1,51 @@
+.exp {
+  background-color: var(--carBackground);
+}
+
+.exp-wrapper img {
+  width: 200px;
+}
+
+.exp-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: -100%;
+  opacity: 0;
+}
+
+.exp-card {
+  min-width: 250px;
+  height: 350px;
+  margin: 2rem;
+  padding: 25px;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+  border-radius: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exp-card h4 {
+  font-size: 12px;
+}
+
+.exp-card h3 {
+  margin: .5rem 0 1rem 0;
+}
+
+.slideRight {
+  animation: fadeSlide 2.5s forwards;
+}
+
+@keyframes fadeSlide {
+  from {
+    margin-left: -100%;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+  }
+}
