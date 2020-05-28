@@ -5,7 +5,21 @@ import "./header.css";
 
 
 const Header = () => {
-  handleScrollAnimations("intro-wrapper", "border", 10);
+
+
+  window.addEventListener("scroll", (e) => {
+
+    let scrollTop = document.scrollingElement.scrollTop;
+    let element = document.getElementsByClassName('intro-wrapper')[0];
+    if (scrollTop > 10) {
+      element.setAttribute('style', 'animation: createBorder 1s forwards');
+    }
+
+    if (scrollTop < 5) {
+      element.setAttribute('style', 'animation: removeBorder .5s forwards');
+    }
+  });
+
   return (
     <header>
       <div className="hello">

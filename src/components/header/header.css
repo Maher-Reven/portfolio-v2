@@ -41,6 +41,7 @@
   margin-left: -100%;
   animation: slideRight 1s forwards;
 }
+
 .hello #he {
   color: #ffffff;
   margin-right: 5px;
@@ -51,6 +52,7 @@
   font-size: 6vw;
   animation: slideRight 1.5s forwards;
 }
+
 .summery h2 {
   text-transform: uppercase;
   padding: 15px;
@@ -69,7 +71,8 @@
   animation: slideRight 2s forwards;
 }
 
-.summery p , .summery h2{
+.summery p,
+.summery h2 {
   font-size: 2vw;
 }
 
@@ -101,14 +104,11 @@
   color: rgb(106, 104, 245);
 }
 
-.border {
-  animation: createBorder 1s forwards;
-}
-
 @media (max-width: 550px) {
   .intro-wrapper {
     flex-direction: column-reverse;
   }
+
   .img-wrapper,
   .summery-wrapper {
     height: auto;
@@ -122,14 +122,41 @@
   .summery {
     align-items: center;
   }
+
   .img-wrapper img {
     width: 40%;
     margin-top: 20px;
   }
+
   .socials i {
     font-size: 20px;
   }
+
   .hello {
     display: none;
+  }
+}
+
+
+@keyframes createBorder {
+  from {
+    border: none;
+
+  }
+
+  to {
+    border-radius: 0 0 30% 30%;
+  }
+
+}
+
+@keyframes removeBorder {
+  from {
+    border-radius: 0 0 30% 30%;
+  }
+
+  to {
+    border: none;
+
   }
 }

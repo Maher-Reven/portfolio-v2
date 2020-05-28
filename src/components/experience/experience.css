@@ -24,6 +24,7 @@
   border-radius: 1.1rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -35,6 +36,10 @@
   margin: .5rem 0 1rem 0;
 }
 
+.exp-card div {
+  text-align: center;
+}
+
 .slideRight {
   animation: fadeSlide 2.5s forwards;
 }
@@ -44,6 +49,7 @@
     margin-left: -100%;
     opacity: 0;
   }
+
   to {
     margin-left: 0;
     opacity: 1;

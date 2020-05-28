@@ -36,10 +36,12 @@ const Experience = () => {
       return (
         <div className="exp-card" key={`key__${company}`}>
           {logo && <img src={logo} alt="logo" />}
-          <h3>{company}</h3>
-          {note && <h4>{note}</h4>}
-          <p>{position}</p>
-          <p>{date}</p>
+          <div>
+            <h3>{company}</h3>
+            {note && <h4>{note}</h4>}
+            <p>{position}</p>
+            <p>{date}</p>
+          </div>
         </div>
       );
     });

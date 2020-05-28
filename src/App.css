@@ -71,15 +71,3 @@ section h2 {
     opacity: 1;
   }
 }
-
-@keyframes createBorder {
-  from {
-    border: none;
-
-  }
-
-  to {
-    border-radius: 0 0 30% 30%;
-  }
-
-}
