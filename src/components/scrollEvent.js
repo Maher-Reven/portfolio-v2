@@ -1,4 +1,4 @@
-export const handleScrollAnimations = (targetClass, addedClass,scrollTopNum) => {
+export const handleScrollAnimations = (targetClass, addedClass, scrollTopNum) => {
   window.addEventListener("scroll", (e) => {
 
     let scrollTop = document.scrollingElement.scrollTop;

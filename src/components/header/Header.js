@@ -1,12 +1,9 @@
 import React from "react";
-import { handleScrollAnimations } from "../scrollEvent.js";
 import profile from "../../images/maher.jpeg";
 import "./header.css";
 
 
 const Header = () => {
-
-
   window.addEventListener("scroll", (e) => {
 
     let scrollTop = document.scrollingElement.scrollTop;
