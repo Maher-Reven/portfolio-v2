@@ -15,9 +15,10 @@
 }
 
 .exp-card {
-  min-width: 250px;
+  width: 100%;
+  max-width: 250px;
   height: 350px;
-  margin: 2rem;
+  margin: 2rem 2rem 1rem 2rem;
   padding: 25px;
   box-shadow: var(--shadow);
   margin-bottom: 1rem;

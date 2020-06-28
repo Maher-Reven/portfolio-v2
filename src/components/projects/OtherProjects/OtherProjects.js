@@ -1,13 +1,20 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./otherprojects.css";
 
 const projects = [
   {
+    title: "SocialApe",
+    link: "https://socialape-6a4b8.web.app/",
+    description:
+      "This is a small social media simulation I've built recently, where I practiced how to deal with Firebase functionality and be more comfortable with ExpressJs",
+    usedTechs: ["JavaScript", "React", "HTML", "CSS", "ExpressJs", "Firebase", "Material-UI"]
+  },
+  {
     title: "Personal Website V1",
-    link: "#",
+    link: "https://maherkurdiportfolio.netlify.app/",
     description:
       "My first portfolio website I designed and built in 2020. I've improved my experience with HTML, CSS/Sass, React.",
-    usedTechs: ["JavaScript", "React", "HTML", "Sass"],
+    usedTechs: ["JavaScript", "React", "HTML", "Sass"]
   },
   {
     title: "Isomorphic React",
@@ -34,7 +41,6 @@ const projects = [
       "Express (Server)",
     ],
   },
-
   {
     title: "OOP SlotMachine",
     link: "https://github.com/moesi88/OOP-slotMachine2",
@@ -99,7 +105,12 @@ function OtherProjects() {
     });
   };
 
-  return <div className="other-projects-wrapper">{renderProjects()}</div>;
+  return <section className="other_projects">
+    <h2>Other Projects</h2>
+    <div className="other-projects-wrapper">
+      {renderProjects()}
+    </div>
+  </section>;
 }
 
 export default OtherProjects;
